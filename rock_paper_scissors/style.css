@@ -12,10 +12,10 @@ body {
 
 
 .parent {
-  margin: auto 20%;
+  margin: auto 25%;
   background-color:greenyellow;
   display: flex;
-  height: 100vh;
+  height: 103vh;
   flex-direction: column;
 }
 .header .header_items {
@@ -25,6 +25,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border:  2px solid black;
 }
 .blue {
   color: blue;
@@ -38,7 +39,7 @@ body {
 
 h1{
   text-align: center;
-  font-size: .6rem;
+  font-size: .7rem;
 }
 
 /*################ COMPUTER SECTION ####################*/
@@ -48,6 +49,7 @@ h1{
   justify-content: center;
   align-items: center;
   text-align: center;
+  border:  2px solid rgb(252, 5, 5);
 }
 .computer .title h1{
   padding: .5rem;
@@ -67,6 +69,7 @@ h1{
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border:  3px solid rgb(0, 0, 255);
 }
 
  button{
@@ -84,6 +87,7 @@ h1{
 .game_items .img {
   background-color: white;
   border-radius: 1rem;
+  border:  2px solid black;
 }
 
 .result{
@@ -91,4 +95,107 @@ h1{
   padding: 1rem 0;
   margin-top: .5rem;
   background-color: rgb(242,194, 68);
+}
+
+.game_items h1{
+  padding: 1.2rem;
+}
+
+/* ################## REsponsiveness section #############*/
+
+@media screen and (max-width:550px) {
+  .parent{
+    margin: 0 10%;
+  }
+  .header_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5rem 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h1{
+    font-size: .7rem;
+  }
+  .header_items .left{
+    margin: .3rem 0;
+   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid blue;
+    width: 100%;
+  }
+   .game_items .img button {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    height: 4rem;
+   }
+}
+
+
+@media screen and (min-width:551px) and (max-width: 700px) {
+  .parent {
+    margin: 0 10%;
+  }
+  .header_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5rem 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h1{
+    font-size: .8rem;
+  }
+  .header_items .left{
+    margin: .3rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid blue;
+    width: 100%;
+  }
+   .game_items .img button {
+    font-size: rem;
+    padding: 0;
+    margin: 0;
+   }
+}
+
+@media screen and (min-width:701px) and (max-width:1036px){
+  .parent{
+    margin:0  15%;
+  }
+  .header_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5rem 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h1{
+    font-size: .8rem;
+  }
+  .header_items .left{
+    margin: .3rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid blue;
+    width: 100%;
+  }
+   .game_items .img button {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+   }
+}
+
+@media screen and (min-width:901px){
+  
 }
