@@ -15,8 +15,6 @@ function play() {
     const playerOptions = [rockBtn, paperBtn, scissorsBtn]
     
     const computerOptions = ['👊', '✋', '✌']
-    // const computerOptions = ['rock', 'paper', 'scissors']
-
 
     playerOptions.forEach( options => {
         options.addEventListener('click', function() {
@@ -26,9 +24,9 @@ function play() {
             // console.log(choiceNumber)
             
             const computerValue = computerOptions[choiceNumber];
-            console.log(player)
-            console.log(computerValue)
-            console.log("")
+            // console.log(player)
+            // console.log(computerValue)
+            // console.log("")
 
             computerPlayerItem.textContent=computerValue
             
@@ -36,7 +34,7 @@ function play() {
     })
     })
 }
-play()
+
 const results = (player, computer) => {
     const game_results = document.getElementById('results')
    
@@ -44,41 +42,34 @@ const results = (player, computer) => {
     computer = computer.toLowerCase();
 
     if (player === computer) {
-        console.log("Draw")
         game_results.textContent = 'Draw'
         
     } else if (player == '✌'){
         if (computer == '✋' ) {
-            console.log("Player wins")
             game_results.textContent = "Player Wins"
             playerScore++
             players_points.textContent = playerScore
         } else {
-            console.log("Computer winnns")
-            game_results.innerText = "Compter Wins";
+            game_results.innerText = "Computer Wins";
             computerScore++
             computers_points.textContent = computerScore
         }
     } else if (player === '👊') {
         if (computer === '✌') {
-            console.log("Player wins")
            game_results.textContent = "Player Wins";
            playerScore++
            players_points.textContent = playerScore
         } else {
             game_results.textContent = 'Computer Wins'
-            console.log("Computer wins")
             computerScore++
             computers_points.textContent = computerScore
         } 
     } else if(player == '✋') {
         if(computer == '👊') {
-            console.log("Player wins")
             game_results.textContent = 'Player Wins'
             playerScore++;
             players_points.textContent = playerScore
         } else {
-            console.log("Computer wins")
             game_results.textContent = 'Computer Wins'
             computerScore++
             computers_points.textContent = computerScore
@@ -86,3 +77,4 @@ const results = (player, computer) => {
     }
 }
 
+play()
