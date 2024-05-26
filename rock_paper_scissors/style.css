@@ -113,7 +113,7 @@ h1{
 @media screen and (max-width:550px) {
   .parent{
     margin: 0 0;
-    height: 100vh;
+    min-height: 100vh;
   }
   .header_items {
     display: flex;
@@ -124,7 +124,7 @@ h1{
     align-items: center;
   }
   h1{
-    font-size: .7rem;
+    font-size: .8rem;
   }
   .header_items .left{
     margin: .4rem 0;
@@ -133,6 +133,10 @@ h1{
     text-align: center;
     border: 2px solid blue;
     width: 100%;
+  }
+  .game_items .img h1 {
+    /* font-size: .5rem; */
+    padding: 1rem 0;
   }
    .game_items .img button {
     font-size: 3rem;
@@ -197,7 +201,7 @@ h1{
     margin: 0 20%;
   }
 
-  .game_items .img button {
+  .img button {
     font-size: 4rem;
     height: auto;
    }
@@ -212,6 +216,33 @@ h1{
 @media screen and (min-width:1051px) {
   .parent{
     height: 100vh;
-    margin: 0 20%;
+    margin: 0 25%;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  .game_items{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+   gap: 1rem;
+  
+  }
+  .parent {
+    padding: 0;
+    margin: 0;
+  }
+  .game_items .img{
+    width: 6rem;
+  }
+  .game_items .img h1 {
+    padding: 1rem 0;
+  }
+  .game_items .img button{
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: .8rem;
   }
 }
