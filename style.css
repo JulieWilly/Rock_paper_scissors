@@ -27,10 +27,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border:  2px solid black;
 }
 .blue {
   color: blue;
+  text-decoration: underline;
 }
 .header_items .left, .right{
   display: flex;
@@ -51,7 +51,7 @@ h1{
   justify-content: center;
   align-items: center;
   text-align: center;
-  border:  2px solid rgb(252, 5, 5);
+  margin: 1rem 0;
 }
 .computer .title h1{
   padding: .5rem;
@@ -73,7 +73,6 @@ h1{
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border:  3px solid rgb(0, 0, 255);
 }
 
  button{
@@ -83,15 +82,11 @@ h1{
   width: 100%;
   cursor: pointer;
   background: transparent;
-  border: 2px solid red;
 }
-.text{
-  border: 2px solid red;
-}
+
 .game_items .img {
   background-color: white;
   border-radius: 1rem;
-  border:  2px solid black;
   width: 7rem;
   height: 7rem;
 }
@@ -131,7 +126,6 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid blue;
     width: 100%;
   }
   .game_items .img h1 {
@@ -158,7 +152,6 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid blue;
     width: 100%;
   }
    .game_items .img button {
@@ -186,7 +179,6 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid blue;
     width: 100%;
   }
    .game_items .img button {
@@ -213,34 +205,19 @@ h1{
   }
 }
 
-@media screen and (min-width:1051px) {
-  .parent{
-    height: 100vh;
-    margin: 0 25%;
-  }
-}
 
 @media screen and (max-width:400px) {
 
   .game_items{
-    display: flex;
-    flex-direction: row;
-    width: auto;
    gap: 1rem;
-  
   }
-  .parent {
-    padding: 0;
-    margin: 0;
+ 
+ 
+  .game_items {
+    margin-top :1rem;     
   }
-  .game_items .img{
-    width: 6rem;
-  }
-  .game_items .img h1 {
-    padding: 1rem 0;
-  }
-  .game_items .img button{
-    font-size: 3rem;
+  .game_items .img {
+    max-width: 30%;
   }
   h1 {
     font-size: .8rem;
